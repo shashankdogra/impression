@@ -1832,7 +1832,7 @@ body.js-page-in-anim-active.js-page-out .pointer {
 
 .header-logo__img {
 	width: auto;
-	height: 20px;
+	height: 60px;
 	vertical-align: top;
 	-webkit-transform: translateY(110%);
 	        transform: translateY(110%);
