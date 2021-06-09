@@ -4239,7 +4239,7 @@ button.mfp-close {
 	letter-spacing: 7px;
 	line-height: 1.2;
 	text-transform: uppercase;
-	color: #fff;
+	color: #29de92;
 	transition: .5s cubic-bezier(.17, .85, .438, .99);
 }
 
@@ -4327,7 +4327,7 @@ button.mfp-close {
 .border-btn__lines-2:after {
 	content: '';
 	position: absolute;
-	background-color: #fff;
+	background-color: #29de92;
 	transition: .5s cubic-bezier(.17, .85, .438, .99);
 }
 
@@ -6913,9 +6913,9 @@ textarea.form-input {
    ========================================================================== */
 
 .client-logo {
-	width:      100px;
-	max-width:  100px;
-	max-height: 100px;
+	width:      64px;
+	max-width:  64px;
+	max-height: 64px;
 }
 
 
