@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Modern Doc Media">
+		<meta name="description" content="Modern Doc Media is a Design and marketing Agency specializing for Doctors, Dentists, Chiropractors and more.">
+		<meta name="keywords" content="website,marketing,for doctors, dentist, chiropractors, ux design, ui design, appointment website">
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="assets/images/favicon.png">
+		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+		<title>Modern Doc</title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- styles -->
+		<link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="preloader cursor-anim-enable">
+		<div class="preloader__out-overlay"></div>
+
+		<!-- preloader-loading start -->
+		<div class="preloader__loading in">
+			<div class="preloader__loading-anim" data-splitting>Loading...</div>
+		</div>
+		<div class="preloader__loading out">
+			<div class="preloader__loading-anim" data-splitting>Loading...</div>
+		</div><!-- preloader-loading end -->
+
+		<!-- pointer start -->
+		<div class="pointer js-pointer" id="js-pointer">
+			<div class="pointer__inner drag">drag</div>
+			<i class="pointer__inner fas fa-search"></i>
+		</div><!-- pointer end -->
+
+		<!-- header start -->
+		<header class="fixed-header">
+			<!-- logo start -->
+			<div class="header-logo">
+				<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+					<img class="header-logo__img" src="assets/images/logo/logo.png" alt="logo">
+				</a>
+			</div><!-- logo end -->
+
+			<!-- menu-icon start -->
+			<div class="menu-icon js-menu-open-close js-pointer-large">
+				<div class="menu-icon__box">
+					<span class="menu-icon__inner"></span>
+					<span class="menu-icon__close"></span>
+				</div>
+			</div><!-- menu-icon end -->
+		</header><!-- header end -->
+
+		<!-- navigation overlay -->
+		<div class="nav-overlay"></div>
+		<!-- navigation start -->
+		<nav class="nav-container js-dropdown-active-box">
+			<!-- nav-box start -->
+			<div class="container small nav-box">
+				<!-- dropdown close btn start -->
+				<div class="dropdown-close">
+					<div class="dropdown-close__inner">
+						<span class="dropdown-close__arrow"></span>
+					</div>
+					<div class="js-dropdown-close js-pointer-large"></div>
+					<div class="js-dropdown-close-2lvl js-pointer-large"></div>
+				</div><!-- dropdown close btn end -->
+
+				<!-- menu-box start -->
+				<ul class="menu-box nav-bg-overlay-box">
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change js-dropdown-open">
+						<a class="nav-btn dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Home">Home</span>
+						</a>
+
+						<!-- dropdown start -->
+						<ul class="menu-box dropdown js-dropdown">
+							<li class="nav-btn-box">
+								<a href="index.html" class="nav-btn dropdown-2lvl-hidden-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Home">Home</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="home_landing.html" class="nav-btn dropdown-2lvl-hidden-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="One Page">One Page</span>
+								</a>
+							</li>
+						</ul><!-- dropdown end -->
+
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/bonnet-casual-close-up-2802601.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="about.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="About">About</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/pexels-marlene-1019771.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="services.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Services">Services</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/two-vases-on-table-842950.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change js-dropdown-open">
+						<a class="nav-btn dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Portfolio">Portfolio</span>
+						</a>
+
+						<!-- dropdown start -->
+						<ul class="menu-box dropdown js-dropdown">
+							<li class="nav-btn-box">
+								<a href="portfolio_fullscreen.html" class="nav-btn dropdown-2lvl-hidden-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Fullscreen">Fullscreen</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="portfolio_carousel.html" class="nav-btn dropdown-2lvl-hidden-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Carousel">Carousel</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="portfolio_grid-3-col.html" class="nav-btn dropdown-2lvl-hidden-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Grid 3 Col">Grid 3 Col</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="portfolio_flex-columns.html" class="nav-btn dropdown-2lvl-hidden-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Flex Columns">Flex Columns</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="portfolio_creative-grid.html" class="nav-btn dropdown-2lvl-hidden-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Creative Grid">Creative Grid</span>
+								</a>
+							</li>
+							<li class="nav-btn-box js-dropdown-open-2lvl">
+								<a class="nav-btn dropdown-2lvl-hidden-btn js-pointer-large">
+									<span class="nav-btn__inner" data-text="Projects">Projects</span>
+								</a>
+
+								<!-- dropdown 2-level start -->
+								<ul class="menu-box dropdown dropdown_2lvl js-dropdown-2lvl">
+									<li class="nav-btn-box">
+										<a href="project_01.html" class="nav-btn js-animsition-link js-pointer-large">
+											<span class="nav-btn__inner" data-text="Project 1">Project 1</span>
+										</a>
+									</li>
+									<li class="nav-btn-box">
+										<a href="project_02.html" class="nav-btn js-animsition-link js-pointer-large">
+											<span class="nav-btn__inner" data-text="Project 2">Project 2</span>
+										</a>
+									</li>
+									<li class="nav-btn-box">
+										<a href="project_03.html" class="nav-btn js-animsition-link js-pointer-large">
+											<span class="nav-btn__inner" data-text="Project 3">Project 3</span>
+										</a>
+									</li>
+									<li class="nav-btn-box">
+										<a href="project_04.html" class="nav-btn js-animsition-link js-pointer-large">
+											<span class="nav-btn__inner" data-text="Project 4">Project 4</span>
+										</a>
+									</li>
+									<li class="nav-btn-box">
+										<a href="project_05.html" class="nav-btn js-animsition-link js-pointer-large">
+											<span class="nav-btn__inner" data-text="Project 5">Project 5</span>
+										</a>
+									</li>
+									<li class="nav-btn-box">
+										<a href="project_06.html" class="nav-btn js-animsition-link js-pointer-large">
+											<span class="nav-btn__inner" data-text="Project 6">Project 6</span>
+										</a>
+									</li>
+									<li class="nav-btn-box">
+										<a href="project_07.html" class="nav-btn js-animsition-link js-pointer-large">
+											<span class="nav-btn__inner" data-text="Project 7">Project 7</span>
+										</a>
+									</li>
+								</ul><!-- dropdown 2-level end -->
+							</li>
+						</ul><!-- dropdown end -->
+
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/goashape-RvyJGaoaWrs-unsplash.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change js-nav-bg-active js-dropdown-open">
+						<a class="nav-btn dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Blog">Blog</span>
+						</a>
+
+						<!-- dropdown start -->
+						<ul class="menu-box dropdown js-dropdown">
+							<li class="nav-btn-box">
+								<a href="blog.html" class="nav-btn dropdown-2lvl-hidden-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Blog">Blog</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="blog_sidebar.html" class="nav-btn dropdown-2lvl-hidden-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Blog Sidebar">Blog Sidebar</span>
+								</a>
+							</li>
+							<li class="nav-btn-box js-dropdown-open-2lvl">
+								<a class="nav-btn dropdown-2lvl-hidden-btn js-pointer-large">
+									<span class="nav-btn__inner" data-text="Posts">Posts</span>
+								</a>
+
+								<!-- dropdown 2-level start -->
+								<ul class="menu-box dropdown dropdown_2lvl js-dropdown-2lvl">
+									<li class="nav-btn-box">
+										<a href="single-post.html" class="nav-btn js-animsition-link js-pointer-large">
+											<span class="nav-btn__inner" data-text="Post">Post</span>
+										</a>
+									</li>
+									<li class="nav-btn-box">
+										<a href="single-post_sidebar.html" class="nav-btn js-animsition-link js-pointer-large">
+											<span class="nav-btn__inner" data-text="Post Sidebar">Post Sidebar</span>
+										</a>
+									</li>
+								</ul><!-- dropdown 2-level end -->
+							</li>
+						</ul><!-- dropdown end -->
+
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/face-facial-hair-fashionable-2555100.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="contact.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Contact">Contact</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/architectural-design-architecture-building-exterior-1707823.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+				</ul><!-- menu-box end -->
+			</div><!-- nav-box end -->
+		</nav><!-- navigation end -->
+
+		<!-- scroll-content start -->
+		<div id="js-scroll-content">
+			<!-- js-animsition-overlay start -->
+			<div class="js-animsition-overlay" data-animsition-overlay="true">
+				<!-- main start -->
+				<main class="main-content">
+					<!-- post start -->
+			
+						<!-- pos-rel start -->
+					
+							<!-- entry-content start -->
+
+								<!-- page head start -->
+								<div class="content-bg-dark after-preloader-anim">
+									<div class="container small padding-top-bottom-150">
+										<!-- description start -->
+										<div class="pos-rel padding-bottom-20">
+											
+											<div class="anim-line-bottom"></div>
+										</div><!-- description end -->
+
+										<!-- title start -->
+										<h2 class="headline-m headline-uppercase padding-top-60">
+											<span class="d-block" data-scroll data-scroll-speed="-0.4" data-scroll-position="top">
+												<span class="anim-chars-fadein" data-splitting>Agreement</span>
+											</span>
+										
+										</h2><!-- title end -->
+									</div>
+
+									<!-- background start -->
+								
+								</div><!-- page head end -->
+								<div class="section-bg-dark" data-scroll-section>
+									<!-- padding-top-30 start -->
+									
+								<div class="container small padding-top-30 padding-bottom-120 section-bg-dark">
+									<ul class="list margin-top-20 text-color-dadada">
+										<li class="list__item dot">Governing Terms and Provisions. The Terms and Conditions of the Agreement (the “Terms and Conditions”)
+											described herein exclusively govern the Services provided by Modern Doc to Client. The Terms and Conditions
+											and the Agreement form the entire agreement between Modern Doc and Client and exclusively govern Modern
+											Doc’s and Client’s relationship during the Agreement’s existence.</li>
+										<li class="list__item dot">Relationship. The relationship of Modern Doc and Client under this Agreement is not an agency, partnership,
+											joint venture, or similar relationship. Except as otherwise specifically authorized, Modern Doc and Client
+											shall not have any authority to assume or create obligations on the other party’s behalf. Neither party
+											shall take any action that has the effect of creating the appearance of its having such authority.</li>
+										<li class="list__item dot">Purpose. Client wishes to purchase from Modern Doc, and Modern Doc wishes to sell to Client, pursuant to the
+											Terms and Conditions of this Agreement, website services, as more fully described in paragraphs six through
+											twelve (hereinafter referred to as “Services”), in exchange for payment as described in this Agreement and
+											paragraph four.</li>
+										<li class="list__item dot">Payment. Client agrees to make the initial payment of the fees identified in the Agreement to Modern Doc on
+											the Effective Date. Client thereby irrevocably authorizes Modern Doc to charge the Client’s account for all
+											amounts due under this Agreement when said amounts become due. Amounts due will be automatically charged, in
+											advance, and are not refundable. Modern Doc is expressly allowed to suspend performance under the Terms and
+											Conditions of the Agreement due to non-payment by Client, and all amounts due and owing will become
+											automatically due.</li>
+										<li class="list__item dot">Duration. The Agreement becomes binding and governs the Parties on the Effective Date, and continues in full
+											force and effect as described in Paragraph 4 of the Terms and Conditions, or is terminated sooner in
+											accordance with Paragraph 4 of the Terms and Conditions.</li>
+										<li class="list__item dot">Termination and Automatic Renewal. This Agreement will automatically renew for succeeding terms of 30 days
+											unless, at least 30 calendar days before the expiration of any term, either Client or Modern Doc gives
+											written notice to the other of its intention to terminate the Agreement.</li>
+										<li class="list__item dot">Services. Modern Doc will perform the Services as defined by this Agreement and its Terms and Conditions.
+											Modern Doc’s performance of Services is conditioned upon Client’s compliance with this Agreement and its
+											Terms and Conditions.</li>
+										<li class="list__item dot">Website Optimization. Modern Doc will provide an optimized website. Modern Doc expressly disclaims any
+											specific placement within any engine.</li>
+										<li class="list__item dot">Domain Creation. Modern Doc agrees to provide Client with information of whom to contact to retrieve domain
+											registration information. If Client does not have a domain name, Modern Doc will assist in selecting,
+											registering, and managing a web domain.</li>
+										<li class="list__item dot">Hosting requirement: Modern Doc will provide website hosting during the duration of the contract. The
+											website, including it’s files, database, and content will remain on Modern Doc’s hosting for the duration of
+											the contract. Self Hosting is not permitted under this contract. Upon termination of the contract, the
+											website including it’s files, database, and content will be packaged and available for download by the
+											client. Modern Doc is not responsible for the transfer of the website to another hosting solution after
+											contract cancellation.</li>
+										<li class="list__item dot">Access to Domain Register. Client grants Modern Doc access to Client’s domain registrar or any website which
+											manages Client’s domain for the purposes of adding or editing DNS entries required for Client’s website to
+											become fully operational. Failure to provide Modern Doc with access may result in a delay or prevent
+											Client’s website from becoming operational. Modern Doc expressly disclaims any damages related to Client
+											failing to perform pursuant to Paragraph 10. Modern Doc further reserves the right to terminate the
+											Agreement for Client’s failure to perform under Paragraph 10 and any fees paid to Modern Doc by Client will
+											not be refunded.</li>
+										<li class="list__item dot">Community Content. Modern Doc will integrate its content pages, including text and images, upon Client’s
+											request (hereinafter referred to as “Client Content”). Modern Doc is the sole owner of the content pages and
+											Client’s use of the content pages is governed by this Agreement and its Terms and Conditions.</li>
+										<li class="list__item dot">Marketing. Client grants Modern Doc permission to create and submit content on Client’s behalf to news
+											outlets, directories, search engines, paid online advertisers, social media outlets, and related web based
+											destinations. Web Marketing is only available if Client purchases "Social" or above. Client hereby agrees to
+											review and comply with any third party’s terms and conditions and/or privacy policy prior to using the
+											third-party website. Modern Doc disclaims all liability pursuant to third party’s terms and conditions and
+											privacy policy.</li>
+										<li class="list__item dot">Client Marketing &amp; Communications. Client agrees to receive marketing, advertising, and promotional
+											communications from Modern Doc via the phone number and email provided on the completed contract. Methods
+											may include phone calls, text messages, emails, and direct mail pieces.</li>
+										<li  class="list__item dot"> class="list__item dot"Grant Of License. Modern Doc grants to Client, only for the duration of the Agreement, a worldwide,
+											<li  class="list__item dot">Grant Of License. Modern Doc grants to Client, only for the duration of the Agreement, a worldwide,
+											nonexclusive license to the use, publicly display, and publicly perform the Video Content produced on behalf
+											of the client, in compliance with the Terms and Conditions set forth in this Agreement. Upon termination of
+											the Agreement, Client shall return all content described in Paragraph 12 in accordance with the terms of
+											Paragraph 32.</li>
+										<li class="list__item dot"> Grant Of License. Modern Doc grants to Client, only for the duration of the Agreement, a worldwide,
+											Authority. Modern Doc and Client represent and warrant that they have full power and authority to enter into
+											and perform this Agreement. Modern Doc and Client also represent and warrant that the person executing this
+											Agreement is properly authorized and empowered to do so.</li>
+										<li class="list__item dot">Notices. Any notice required by this Agreement must be given in writing and delivered by mail, fax, and/or
+											electronic mail to the addresses set forth in this Agreement. Modern Doc and Client may from time to time
+											change their respective address and must give written notice of the new address and the date when it will
+											become effective within 14 days of doing so.</li>
+										<li class="list__item dot">Severability. The provisions of this Agreement and its Terms and Conditions are severable. If any portion,
+											provision, or part of this Agreement is held, determined, or adjudicated to be invalid, unenforceable, or
+											void for any reason whatsoever, each such portion, provision, or part shall be severed from the remaining
+											portions, provisions or parts of this Agreement and shall not affect the validity or enforceability of any
+											remaining portions, provisions, or parts</li>
+										<li class="list__item dot">Successors. This Agreement and its Terms and Conditions shall inure to the benefit of and be binding on the
+											heirs, legal representatives, successors, and permitted assigns of Modern Doc and Client.</li>
+										<li class="list__item dot">Governing Law. This Agreement and its Terms and Conditions shall be governed by and construed according to
+											the laws of California as they are applied to contracts made and to be performed entirely in California. All
+											actions under this Agreement shall be brought in a federal or state court of competent jurisdiction in San
+											Diego, California, and in no other jurisdiction.</li>
+										<li class="list__item dot">Survival Of Certain Provisions. Termination or expiration of this Agreement for any reason shall not release
+											the Parties from any liabilities or obligations set forth in this Agreement and its Terms and Conditions
+											that: (a) have expressly agreed shall survive any such termination or expiration or (b) remain to be
+											performed or by their nature would be intended to be applicable following any such termination or
+											expiration. The provisions of this section shall survive the expiration or earlier termination of this
+											Agreement.</li>
+										<li class="list__item dot">Entire Agreement. This Agreement, together with its exhibits, constitutes the entire understanding and
+											agreement between the parties and supersedes any and all prior oral or written communications with respect
+											to it, all of which are merged into it. Except as specifically provided for, this Agreement and its Terms
+											and Conditions may not be altered, amended, or modified except by an instrument in writing signed by a duly
+											authorized representative of each party.</li>
+										<li class="list__item dot">Confidentiality. Modern Doc and Client agree that the Agreement and its Terms and Conditions are
+											confidential and shall not be disclosed to a third party unless agreed upon in writing signed by a duly
+											authorized representative of each party.</li>
+										<li class="list__item dot">Excuse for Performance. If the performance of Modern Doc under this Agreement is prevented, hindered, or
+											otherwise made impractical because of flood, strike, war, acts of government, or any other casualty or cause
+											beyond the control of Modern Doc, then Modern Doc will be excused from its performance to the extent and as
+											long as it is prevented, hindered, or delayed by any of these events.</li>
+										<li class="list__item dot">Media Releases. All media releases, public announcements, and public disclosures by Client, its employees,
+											or agents related to this Agreement, its subject matter or its Terms and Conditions, including promotional
+											or marketing material, but not including any announcement intended solely for internal distribution by
+											Client or any disclosure required by legal, accounting, or regulatory requirements beyond the reasonable
+											control of Client, shall be coordinated with and approved by Modern Doc in writing before production.</li>
+										<li class="list__item dot">Compliance With Laws. Client agrees to comply with all applicable federal, state, and local statutes,
+											ordinances, rules, and regulations. Client agrees to not violate any law applicable to the creation and use
+											of any trademark, copyright, trade secret and any related information.</li>
+										<li class="list__item dot">Attorneys’ Fees and Costs. In the event of a material breach of the Agreement, the prevailing party in any
+											action commenced to enforce this Agreement shall be awarded its reasonable attorneys’ fees and court costs.
+										</li>
+										<li  class="list__item dot">Indemnification. Client shall indemnify, defend, and hold Modern Doc harmless from and against any and all
+											liability, litigation, demands, claims, losses, damages, recoveries, settlements, and expenses (including
+											without limitation reasonable attorneys’ fees and costs) arising from or in connection with Client’s
+											Content, Client’s website, Client’s use of the Services, Client’s breach or alleged breach of its
+											representations or warranties, and/or Client’s violation of laws, rules or regulations</li>
+										<li  class="list__item dot">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICES ARE PROVIDED “AS IS”, MODERN DOC DISCLAIMS
+											ANY AND ALL WARRANTIES OF ANY KIND, INCLUDING ANY EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF
+											MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, AS WELL AS ANY WARRANTIES ALLEGED TO HAVE ARISEN FROM
+											CUSTOM, USAGE, OR THE COURSE OF DEALING BETWEEN THE PARTIES. MODERN DOC DOES NOT WARRANT THAT THE SERVICES
+											WILL MEET CLIENT’S REQUIREMENTS OR THAT THE OPERATION OF THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE.
+											IN ADDITION, MODERN DOC DOES NOT WARRANT OR GUARANTEE THAT CLIENT WILL BE ABLE TO ACCESS THE SERVICES AT ALL
+											TIMES. CLIENT UNDERSTANDS AND ACKNOWLEDGES THAT INTERNET CONGESTION AND OUTAGES, AS WELL AS MAINTENANCE,
+											DOWNTIME, AND OTHER INTERRUPTIONS, MAY INTERFERE AT TIMES WITH YOUR ABILITY TO SERVICES.</li>
+										<li  class="list__item dot">No Liability for Special, Incidental, Consequential, or Punitive Damages. In no event will Modern Doc be
+											liable for punitive, exemplary, loss of profits or any special, incidental, or consequential damages,
+											however caused, even if Modern Doc has been advised of the possibility of any such damages</li>
+										<li  class="list__item dot">Disclaimer of Warranty Against Infringement. Modern Doc makes no warranty that the Services are or will be
+											delivered free of any person’s claim of patent, trademark, copyright, or similar infringement. Client
+											assumes all risks (including the risk of suit) that the Services or any use of the Services will infringe
+											existing or subsequently issued patents, trademarks, or copyrights. Modern Doc has no knowledge which would
+											lead it to believe that the manufacture, use, or sale of the goods will result in a claim of infringement of
+											patents, trademarks, or copyrights.</li>
+										<li  class="list__item dot">Client Warranties. Client agrees to obey and comply with all applicable United States laws, rules, and
+											regulations governing Modern Doc’s performance of the Services. Client warrants that it has the legal right
+											to grant any license deemed necessary to allow Modern Doc’s performance of Services, and has acquired any
+											and all required third party clearances, consents and licenses necessary in connection with Modern Doc’s
+											performance of Services, that Client Content is true and accurate and does not violate any law or regulation
+											and is not misleading, defamatory, libelous or slanderous, that Modern Doc use of Client Content in
+											providing the Services will not infringe or violate third party rights, that the Client website and its
+											content will not contain any material that is obscene, pornographic, profane, fraudulent, libelous or
+											defamatory, and will not infringe or violate the rights of any third party. Modern Doc expressly reserves
+											its right to terminate the Agreement if Client violates any part of this provision.</li>
+										<li  class="list__item dot">Termination for Breach. Modern Doc reserves the right to automatically terminate the Agreement and
+											discontinue Services for any reason including, but not limited to: Client requests to publish any private,
+											illegal, defamatory, obscene, slanderous or inappropriate materials, fraud, copyright infringement, and/or
+											abusive use of our website and email services.</li>
+										<li  class="list__item dot">Return of Confidential Information. On termination of this Agreement for any reason, Client shall
+											immediately deliver to Modern Doc all documents, data, records, Client lists, notebooks, and similar
+											writings relating in any way to any proprietary information of Modern Doc, including copies then in Client’s
+											possession, whether prepared by Client or others. Client is entitled to retain any and all documents, data,
+											or other items created and/or originated by Client. Any confidential information will be marked as such by
+											Modern Doc or orally conveyed by Modern Doc to Client.</li>
+										<li  class="list__item dot">Reservation of Rights. Modern Doc reserves the following rights: (1) the right to change third party
+											vendors, web marketing solutions and systems without notice to allow for better service performance and may
+											do so with providing Notice to Client; and (2) the right for Modern Doc to monitor any and all use of the
+											Services and gather system data for the purpose of optimizing the Services. Modern Doc will not disclose
+											Client data to any third party and any matter that specifically identifies Client.</li>
+										<li  class="list__item dot">Counterparts: This Agreement may be executed in counterparts which, when taken together, shall constitute a
+											binding agreement between Client and Modern Doc.</li>
+										<li  class="list__item dot"><strong>ADA Compliance is Client’s Sole Responsibility and Indemnification.</strong> It is Client’s sole
+											responsibility to ensure that Client’s Content, Client’s website, and Client’s use of the Services are in
+											compliance with the Americans with Disabilities Act (ADA), 42 U.S.C. § 12101, et seq., and any related state
+											statutes or regulations.Modern Doc is not responsible for ensuring that Client’s Content, Client’s website,
+											or Client’s use of the Services fully comply with the ADA and any related state statutes or regulations.
+											Client shall indemnify, defend, and hold Modern Doc harmless from and against any and all liability,
+											litigation, demands, claims, losses, damages, recoveries, settlements, and expenses (including without
+											limitation reasonable attorneys’ fees and costs) arising from or in connection with Client’s failure to
+											comply with the ADA and/or Client’s violation of the ADA and any applicable state statutes or regulations.
+										</li>
+									</ul>
+								</div>
+								</div>		
+				</main><!-- main end -->
+
+				<!-- footer start -->
+				<footer class="section-bg-dark" data-scroll-section>
+					<!-- container start -->
+					<div class="container padding-top-bottom-30" data-scroll data-scroll-speed="-4" data-scroll-position="bottom">
+						<!-- flex-container start -->
+						<div class="flex-container flex-align-center">
+							<!-- column start -->
+							<div class="eight-columns padding-top-90">
+								<h4 class="column-l-r-margin-10 headline-s headline-uppercase">
+									The Best<br>
+									Agency for<br>
+									Your Businnes
+								</h4>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-90">
+								<ul class="column-l-r-margin-10 list">
+									<li class="list__item">
+										<a href="index.html" class="footer-nav-btn js-pointer-small js-animsition-link">Home</a>
+									</li>
+									<li class="list__item">
+										<a href="about.html" class="footer-nav-btn js-pointer-small js-animsition-link">About</a>
+									</li>
+									<li class="list__item">
+										<a href="services.html" class="footer-nav-btn js-pointer-small js-animsition-link">Services</a>
+									</li>
+									<li class="list__item">
+										<a href="portfolio_fullscreen.html" class="footer-nav-btn js-pointer-small js-animsition-link">Portfolio</a>
+									</li>
+									<li class="list__item">
+										<a href="blog.html" class="footer-nav-btn js-pointer-small js-animsition-link">Blog</a>
+									</li>
+									<li class="list__item">
+										<a href="contact.html" class="footer-nav-btn js-pointer-small js-animsition-link">Contact</a>
+									</li>
+								</ul>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+
+						<!-- flex-container start -->
+						<div class="flex-container padding-top-30">
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Email:</div>
+									<div class="margin-top-20">
+										<a href="#" class="line-btn js-pointer-small">email@tumar_agency.com</a>
+										<div class="margin-top-5">
+											<a href="#" class="line-btn js-pointer-small">email@tumar_job.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Phone:</div>
+									<div class="margin-top-20">
+										<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+23 8 8532 7834</a>
+										<div class="margin-top-5">
+											<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+23 8 9635 7335</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Address:</div>
+									<div class="margin-top-20">
+										<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">
+											PO Box 223158 Oliver Street<br>
+											East Victoria 2006 UK
+										</a>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="twelve-columns padding-top-90">
+								<div class="column-l-r-margin-10 padding-top-30 pos-rel">
+									<div class="anim-line-top" data-scroll data-scroll-offset="5%"></div>
+									<!-- footer-social start -->
+									<ul class="list list_row list_margin-30px">
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Facebook</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Dribbble</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Instagram</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Youtube</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Behance</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Twitter</a>
+										</li>
+									</ul><!-- footer-social end -->
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="twelve-columns padding-top-120">
+								<div class="column-l-r-margin-10 pos-rel">
+									<p class="copyright margin-right-30">
+										&copy; Copyright 2020 TUMAR. Template by <a href="#" class="copyright__author js-pointer-small">Jinna Gik</a>
+									</p>
+									<!-- to top btn start -->
+									<a href="#up" class="scroll-to-btn js-pointer-large" data-scroll data-scroll-repeat data-scroll-to>
+										<span class="scroll-to-btn__arrow"></span>
+									</a><!-- to top btn end -->
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+					</div><!-- container end -->
+				</footer><!-- footer end -->
+			</div><!-- js-animsition-overlay end -->
+		</div><!-- scroll-content end -->
+
+		<!-- scripts -->
+		<script src="assets/js/plugins.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
