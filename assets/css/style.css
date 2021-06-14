@@ -161,6 +161,7 @@ ul,
 ol {
 	margin:  0;
 	padding: 0;
+
 }
 
 ul li,
@@ -6714,6 +6715,12 @@ textarea.form-input {
 .list__item.check,
 .list__item.x {
 	padding-left: 30px;
+}
+.list__decimal {
+	list-style: decimal;
+	font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 18px;
 }
 
 .list__item:before {
