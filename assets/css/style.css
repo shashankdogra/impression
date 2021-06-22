@@ -6750,6 +6750,7 @@ textarea.form-input {
 
 .list__item.check:before {
 	content: '\f00c';
+	color:#29DE92;
 }
 
 .list__item.x:before {
