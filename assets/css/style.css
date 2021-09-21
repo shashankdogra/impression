@@ -2393,7 +2393,7 @@ ul.icon-direction li {
 /* box-contact */
 .box-contact {
 	float           : left;
-	width           : 25%;
+	width           : 33%;
 	padding         : 62px 2px 44px 44px;
 	background-color: #142643;
 }
@@ -2414,7 +2414,7 @@ ul.icon-direction li {
 /* box-useful */
 .box-useful {
 	float           : left;
-	width           : 25%;
+	width           : 33%;
 	padding         : 62px 0px 52px 92px;
 	background-color: #192A47;
 }
@@ -2491,7 +2491,7 @@ ul.icon-direction li {
 /* box-services */
 .box-services {
 	float           : left;
-	width           : 25%;
+	width           : 33%;
 	background-color: #192A47;
 	padding         : 62px 0px 50px 65px;
 }
