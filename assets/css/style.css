@@ -4695,3 +4695,8 @@ ul.list-hours li .opening-hours {
 	display        : flex;
 	justify-content: space-between;
 }
+
+.second-row-service {
+
+	margin-top: 42px;
+}
